@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+html, body {
+    background-image: url("https://i.ibb.co/w07WR9M/Logo.gif");
+    background-position-y: 105%;
+    background-position-x: -30px;
+    background-size: cover;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#box1, #box2 {
+    width: 700px;
+    height: 500px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    animation-fill-mode: forwards;
+    box-sizing: border-box;
+    padding: 80px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+#box1 {
+    background-color: rgb(20, 33, 57);
+    top: 55%;
+    left: 65%;
+    z-index: 0;
+}
+#box2 {
+    background-color: rgb(35, 35, 56);
+    top: 45%;
+    left: 70%;
+    z-index: 1;
+}
+.back { animation: back 1s; }
+.front { animation: front 0.5s; }
+@keyframes back {
+    from {
+        top: 45%;
+        left: 70%;
+        z-index: 1;
+    }
+    30% {
+        top: 55%;
+        left: 15%;
+    }
+    to {
+        top: 55%;
+        left: 65%;
+        z-index: 0;
+    }
+}
+@keyframes front {
+    from {
+        top: 55%;
+        left: 65%;
+        z-index: 0;
+    }
+    to {
+        top: 45%;
+        left: 70%;
+        z-index: 1;
+    }
+}
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 50px;
+}
+input {
+    border: none;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    background: none;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding: 20x;
+    margin: 12px 0;
+    box-sizing: border-box;
+    width: 85%
+}
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-image: url(https://tinyurl.com/26ddf8pe);
+    background-position: center;
+    background-size: contain;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:focus{ outline: none; }
+#ba { margin: 0 0 0 51%; }
+#bs { margin: 5px 0 0 3%; }
+#bc { margin: 5px 0 0 3%; }
+#box1 h1 {margin-top: 10%}
+button:hover{
+   animation: n 0.5s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes n {
+  0% {
+    background-position: 50% center;
+  }
+  100% {
+    background-position: 90% center;
+  }
+}
+p {
+    font-size: 20px;
+}
+span {
+    color: yellow
+}
