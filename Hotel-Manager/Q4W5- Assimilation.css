@@ -99,22 +99,5 @@ input:focus{ outline: none; }
 #bs { margin: 5px 0 0 3%; }
 #bc { margin: 5px 0 0 3%; }
 #box1 h1 {margin-top: 10%}
-button:hover{
-   animation: n 0.5s;
-   animation-fill-mode: forwards;
-}
-
-@keyframes n {
-  0% {
-    background-position: 50% center;
-  }
-  100% {
-    background-position: 90% center;
-  }
-}
-p {
-    font-size: 20px;
-}
-span {
-    color: yellow
-}
+p { font-size: 20px; }
+span { color: yellow }
